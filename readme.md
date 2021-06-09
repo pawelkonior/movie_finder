@@ -18,3 +18,9 @@
 ## Two types of web applications
 - classic - reload if you click on something
 - SPA - single page application (javascript required)
+
+## Way to create functionality in Flask
+1. Model
+2. Form (optional)
+3. View
+4. Template
