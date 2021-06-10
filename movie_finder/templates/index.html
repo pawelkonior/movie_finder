@@ -7,4 +7,10 @@
 
 {% block content %}
     <h1>Movie finder 2</h1>
+
+    {% for movie in movies %}
+        {{ movie.title }}
+        {{ movie.description }}
+
+    {% endfor %}
 {% endblock %}

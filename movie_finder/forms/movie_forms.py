@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, TextAreaField, FloatField, FileField, SubmitField
+from wtforms import StringField, DateField, TextAreaField, FloatField, FileField, SubmitField
 
 
 class AddMovieForm(FlaskForm):
@@ -7,4 +7,5 @@ class AddMovieForm(FlaskForm):
     description = TextAreaField("Description")
     duration = FloatField("Duration")
     image = FileField("Cover")
+    created = DateField("Created")
     submit = SubmitField("Add")

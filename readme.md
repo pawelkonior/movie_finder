@@ -24,3 +24,22 @@
 2. Form (optional)
 3. View
 4. Template
+
+# Databases
+1. Table - Class
+2. Columns - Class attribute
+3. Rows - Object
+
+## ORM - object relational mapping - SqlAlchemy
+
+## Flask SQLAlchemy Migrate useful commands
+
+```bash
+ 1067  flask
+ 1068  flask db
+ 1069  flask db init
+ 1070  flask db migrate -m "Initial migration"
+ 1071  flask db upgrade
+
+
+```
