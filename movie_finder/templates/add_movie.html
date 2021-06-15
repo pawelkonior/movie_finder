@@ -5,24 +5,33 @@
 
     <form action="{{ url_for('movie.add_movie') }}" method="POST">
         {{ form.hidden_tag() }}
-        <div>
+
+        {% for error in form.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+
+        {% endfor %}
+
+        <div class="form-group">
             {{ form.title.label }}
-            {{ form.title() }}
+            {{ form.title(class="form-control") }}
         </div>
-        <div>
+        <div class="form-group">
             {{ form.description.label }}
-            {{ form.description() }}
+            {{ form.description(class="form-control") }}
         </div>
-        <div>
+        <div class="form-group">
             {{ form.duration.label }}
-            {{ form.duration() }}
+            {{ form.duration(class="form-control") }}
         </div>
-        <div>
+        <div class="form-group">
             {{ form.image.label }}
-            {{ form.image() }}
+            {{ form.image(class="form-control") }}
         </div>
-        <div>
-            {{ form.submit() }}
+        <hr>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary form-control") }}
         </div>
     </form>
 
